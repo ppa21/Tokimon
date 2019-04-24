@@ -1,0 +1,6 @@
+/Users/pruthvirajpatel/RiderProjects/Tokimon/Tokimon/bin/Debug/Tokimon.exe
+/Users/pruthvirajpatel/RiderProjects/Tokimon/Tokimon/bin/Debug/Tokimon.pdb
+/Users/pruthvirajpatel/RiderProjects/Tokimon/Tokimon/obj/Debug/Tokimon.csprojAssemblyReference.cache
+/Users/pruthvirajpatel/RiderProjects/Tokimon/Tokimon/obj/Debug/Tokimon.csproj.CoreCompileInputs.cache
+/Users/pruthvirajpatel/RiderProjects/Tokimon/Tokimon/obj/Debug/Tokimon.exe
+/Users/pruthvirajpatel/RiderProjects/Tokimon/Tokimon/obj/Debug/Tokimon.pdb
