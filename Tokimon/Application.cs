@@ -19,42 +19,42 @@ namespace Tokimon {
             String tokiType = "";
             int tokiStrength = 0;
 
-        while(true) {
-            if(choice == 1) {
-                PrintAllTokimons(tokimonContainer);
-                choice = NewChoice(menu);
-            } else if(choice == 2) {
-                AddATokimon(tokiName, tokiType, tokiSize, tokimonContainer);
-                menu.PrintMenu();
-                choice = menu.Input();
-            } else if(choice == 3) {
-                PrintAllTokimons(tokimonContainer);
-                
-                if(!(tokimonContainer.Count == 0)) {
-                    RemoveTokimon(tokimonContainer);
-                }
-
-                choice = NewChoice(menu);
-            } else if(choice == 4) {
-                PrintAllTokimons(tokimonContainer);
-
-                if(!(tokimonContainer.Count == 0)) {
-                    IncreaseStrength(tokiStrength, tokimonContainer);
-                }
-
-                choice = NewChoice(menu);
-            } else if(choice == 5) {
-                if(tokimonContainer.Count == 0) {
-                    Console.WriteLine("\n You don't have any Tokimon objects.\n");
+            while(true) {
+                if(choice == 1) {
+                    PrintAllTokimons(tokimonContainer);
+                    choice = NewChoice(menu);
+                } else if(choice == 2) {
+                    AddATokimon(tokiName, tokiType, tokiSize, tokimonContainer);
+                    menu.PrintMenu();
+                    choice = menu.Input();
+                } else if(choice == 3) {
+                    PrintAllTokimons(tokimonContainer);
+                    
+                    if(!(tokimonContainer.Count == 0)) {
+                        RemoveTokimon(tokimonContainer);
+                    }
+    
+                    choice = NewChoice(menu);
+                } else if(choice == 4) {
+                    PrintAllTokimons(tokimonContainer);
+    
+                    if(!(tokimonContainer.Count == 0)) {
+                        IncreaseStrength(tokiStrength, tokimonContainer);
+                    }
+    
+                    choice = NewChoice(menu);
+                } else if(choice == 5) {
+                    if(tokimonContainer.Count == 0) {
+                        Console.WriteLine("\n You don't have any Tokimon objects.\n");
+                    } else {
+                        PrintAllTokimonObjects(tokimonContainer);
+                    }
+    
+                    choice = NewChoice(menu);
                 } else {
-                    PrintAllTokimonObjects(tokimonContainer);
+                    return;
                 }
-
-                choice = NewChoice(menu);
-            } else {
-                return;
             }
-        }
     }
 
     private static void PrintAllTokimons(List<Tokimon> tokimonContainer) {
